@@ -11,22 +11,10 @@
 </head>
 
 <body>
-  <!--   <script src="javascripts/googlemapAPI.js" charset="utf-8"></script> -->
   <div id="map">
-    <div id="map_custmomize" style="width:100%;height:640px;"></div>
+    <div class="maps" id="map_custmomize" style="width:100%;height:640px;"></div>
   </div>
-
-<script>
-  $(document).ready(function(){
-    var latlng = new google.maps.LatLng(135.498380,34.711843); //表示したい場所の経度、緯度
-    var myOptions = {
-      zoom: 18, // 拡大比率
-      center: latlng, // 表示枠内の中心点
-      mapTypeId: google.maps.MapTypeId.ROADMAP //表示タイプの指定
-    };
-    var map = new google.maps.Map(document.getElementById('map_custmomize'), myOptions);    
-  });
-</script>
-
+  
+  <script type="text/javascript" charset="utf-8" src="javascripts/googlemapAPI.js"></script>  
 </body>
 </html>
