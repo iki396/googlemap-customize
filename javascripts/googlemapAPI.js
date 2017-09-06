@@ -1,12 +1,10 @@
-$(document).ready(function() {
-  var feed = new Instafeed({
-    get: 'user',
-    userId: '1707180127',
-    accessToken: '1707180127.9a2a446.d1dd01c37e6745ed9d82b94eaa8897cc',
-    links     : true,          //false
-    limit     : 5,             //max60
-    resolution: 'low_resolution',
-    template: '<li><a href="{{link}}"><img src="{{image}}" target="_blank" /></a><br />{{caption}}<br />like:{{likes}},comments:{{comments}}</li>',
-  });
-  feed.run();
-});
+function initialize() {
+  var latlng = new google.maps.LatLng(135.498380,34.711843); //表示したい場所の経度、緯度
+  var myOptions = {
+    zoom: 18, // 拡大比率
+    center: latlng, // 表示枠内の中心点
+    mapTypeId: google.maps.MapTypeId.ROADMAP //表示タイプの指定
+  };
+  var map = new google.maps.Map(document.getElementById('map_custmomize'), myOptions);
+}
+
