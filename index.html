@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="stylesheets/main.css">  
   <link rel="stylesheet" href="stylesheets/bass-grid.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmxHbNrM4mzZe4aoijInfd838spA0zUTo"></script>
   <script type="text/javascript" charset="utf-8" src="javascripts/jquery.js"></script>
 </head>
 
@@ -16,18 +17,16 @@
   </div>
 
 <script>
-  function initialize() {
+  $(document).ready(function(){
     var latlng = new google.maps.LatLng(135.498380,34.711843); //表示したい場所の経度、緯度
     var myOptions = {
       zoom: 18, // 拡大比率
       center: latlng, // 表示枠内の中心点
       mapTypeId: google.maps.MapTypeId.ROADMAP //表示タイプの指定
     };
-    var map = new google.maps.Map(document.getElementById('map_custmomize'), myOptions);
-  }
+    var map = new google.maps.Map(document.getElementById('map_custmomize'), myOptions);    
+  });
 </script>
 
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmxHbNrM4mzZe4aoijInfd838spA0zUTo&callback=initMap"></script>
 </body>
 </html>
