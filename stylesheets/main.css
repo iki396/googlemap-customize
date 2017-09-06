@@ -1,0 +1,23 @@
+html, body{  
+  width: 80%;
+  margin: 0 10%;
+  
+  color: #2C2C46;
+  font-family: Rubik;
+}
+
+.content{
+  position: relative;
+}
+
+.content_image{
+  position: relative;
+  top: 150px; right: 20%;
+}
+
+.content_title{
+  position: relative;
+  font-size: 54px;
+  font-weight: 500;
+  z-index: 3;
+}
